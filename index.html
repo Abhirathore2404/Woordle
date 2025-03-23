@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Word</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="startsound">
+        <source src="https://cdn.codechef.com/Learning/startsound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="endsuccesssound">
+        <source src="https://cdn.codechef.com/Learning/endsuccesssound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="endfailsound">
+        <source src="https://cdn.codechef.com/Learning/endfailsound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <h1>Guess the Word</h1>
+        <button id="start-button">Start Game</button>
+        <div id="word-container"></div>
+        <p>Chances left: <span id="chances">Click On Start Game!</span></p>
+        <p>Word Length: <span id="length">Click On Start Game!</span></p>
+        <div id="feedback"></div>
+        <div id="history-container">
+            <ul id="history-list"></ul>
+        </div>
+        <form id="guess-form">
+            <input type="text" id="guess-input" required>
+            <button id="submitButton" type="submit">Guess</button>
+        </form>
+        <button id="reload-button">Reload Game</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
